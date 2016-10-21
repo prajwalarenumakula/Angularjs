@@ -1,0 +1,15 @@
+<script type="text/ecmascript">
+var arr=["Jani"];
+function Person(name) {
+this.name = name;
+}
+Person.prototype.prefixName = function (arr) {
+alert("yes");
+return arr.map(function (character) {
+return this.name + character;
+}, this);
+};
+
+var string = Person('Devang');
+alert(string);
+</script>
